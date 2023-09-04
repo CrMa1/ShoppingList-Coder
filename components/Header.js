@@ -8,7 +8,7 @@ const Header = ({onHandleChangeItem,addItem,txtValue,onHandleChangeAllItems}) =>
         <View style={styles.header}>
           <Text style={{ fontSize: 28, color: "white" }}>Lista de compras</Text>
           <Pressable onPress={()=> onHandleChangeAllItems()}>
-            <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faClipboardCheck} size='25x' />
+            <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faClipboardCheck} size={25} />
           </Pressable>
         </View>
       </View><View style={styles.paddings}>

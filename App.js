@@ -32,21 +32,21 @@ export default function App() {
 
   const titleUpdate = () => (
     <View style={{flexDirection: 'row'}}>
-      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faListCheck} size='22x' />
+      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faListCheck} size={22} />
       <Text style={{fontSize:25,fontWeight:"bold"}}> Actualizar </Text>
     </View>
   )
 
   const titleDelete = () => (
     <View style={{flexDirection: 'row'}}>
-      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faTrash} size='22x' />
+      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faTrash} size={22} />
       <Text style={{fontSize:25,fontWeight:"bold"}}> Eliminar </Text>
     </View>
   )
 
   const titleCheckAll = () => (
     <View style={{flexDirection: 'row'}}>
-      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faCheckDouble} size='22x' />
+      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={faCheckDouble} size={22} />
       <Text style={{fontSize:25,fontWeight:"bold"}}> Completar Todo </Text>
     </View>
   )
@@ -83,13 +83,13 @@ export default function App() {
 
   const iconCheck = index => (
     <Pressable onPress={()=> changeItemStatus(index)}>
-      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={checkSolid} size='22x' /> 
+      <FontAwesomeIcon style={{marginTop:5,color:"#925a8f"}} icon={checkSolid} size={22} /> 
     </Pressable>
   )
 
   const iconNoCheck = index => (
     <Pressable onPress={()=> changeItemStatus(index)}>
-      <FontAwesomeIcon style={{marginTop:5}} icon={check} size="22x" />
+      <FontAwesomeIcon style={{marginTop:5}} icon={check} size={22} />
     </Pressable>
   )
 
@@ -100,7 +100,7 @@ export default function App() {
          {item.value}
       </Text>
       <TouchableOpacity onPress={() => onHandleModal(index)} >
-        <Text><FontAwesomeIcon style={{color:"#925a8f"}} icon={faTrash} size="25x" /></Text>
+        <Text><FontAwesomeIcon style={{color:"#925a8f"}} icon={faTrash} size={25} /></Text>
       </TouchableOpacity>
     </View>
   )
